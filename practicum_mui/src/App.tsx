@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './images/logo.svg';
+import Navbar from './components/Navbar';
 import './styles/App.css';
-
+import Gallery from './components/Gallery';
+import Content from './components/Content';
+import Footer from './components/Footer';
+import LogosGallery from './components/LogosGallery';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar active="1"/>
+      <Gallery/>
+      <LogosGallery/>
+      <Content/>
+      <Footer/>
     </div>
   );
 }
