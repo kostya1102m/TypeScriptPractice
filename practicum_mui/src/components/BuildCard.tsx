@@ -55,13 +55,17 @@ function BuildCard({ building, index }: ComponentProps) {
                     <Typography
                         gutterBottom
                         variant="h5"
-                        textAlign="center" // Выравнивание заголовка по центру  
+                        textAlign="center"  
                     >
                         {building.title}
                         
                     </Typography>
                     {building.description.map((item, ind) => (
-                        <StyledTypography key={ind} variant="body2">
+                        <StyledTypography 
+                            key={ind} 
+                            variant="body2"
+                            fontSize="16px"
+                            >
                             {item}
                         </StyledTypography>
                     ))
